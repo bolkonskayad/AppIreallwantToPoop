@@ -26,4 +26,16 @@
         android:background="@color/white"
       />
 
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="30dp"
+        android:text="Перейти к следующему окну"
+        android:textColor="@color/purple_500"
+        android:background="@color/white"
+        />
+
 </LinearLayout>

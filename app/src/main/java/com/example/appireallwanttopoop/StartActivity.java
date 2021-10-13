@@ -1,5 +1,6 @@
 package com.example.appireallwanttopoop;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -12,6 +13,7 @@ public class StartActivity extends AppCompatActivity {
 
     private EditText etWriteSomething;
     private Button buttonTap;
+    private Button buttonNext;
 
     private View.OnClickListener mOnTapClickListener = new View.OnClickListener() {
         @Override
@@ -21,6 +23,18 @@ public class StartActivity extends AppCompatActivity {
             }
         }
     };
+    private View.OnClickListener mOnNextClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+
+                Intent startTask2Intent =
+                        new Intent(StartActivity.this, Task2.class);
+                startTask2Intent.putExtra(Task2.TEXT_KEY, etWriteSomething.getText().toString());
+                startActivity(startTask2Intent);
+
+        }
+    };
+
 
     private boolean isTextValid()
     {
@@ -39,7 +53,10 @@ public class StartActivity extends AppCompatActivity {
 
         etWriteSomething = findViewById(R.id.etTextSomething);
         buttonTap = findViewById(R.id.tap_button);
+        buttonNext = findViewById(R.id.next_button);
 
         buttonTap.setOnClickListener(mOnTapClickListener);
+        buttonNext.setOnClickListener(mOnNextClickListener);
+
     }
 }
