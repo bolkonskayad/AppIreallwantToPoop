@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/my_gradient_drawable">
 
     <TextView
         android:id="@+id/mText"
@@ -13,6 +15,8 @@
         android:layout_marginTop="250dp"
         android:layout_marginRight="50dp"
         android:textAlignment="center"
+        android:textColorLink="@color/white"
+
         />
 
     <Button
@@ -23,7 +27,7 @@
         android:layout_marginTop="42dp"
         android:layout_marginRight="142dp"
         android:background="@color/white"
-        android:text="@string/dontDevelop"
+        android:text="@string/search"
         android:textColor="@color/purple_500"/>
 
 </LinearLayout>

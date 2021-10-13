@@ -28,8 +28,8 @@ public class StartActivity extends AppCompatActivity {
         public void onClick(View view) {
 
                 Intent startTask2Intent =
-                        new Intent(StartActivity.this, Task2.class);
-                startTask2Intent.putExtra(Task2.TEXT_KEY, etWriteSomething.getText().toString());
+                        new Intent(StartActivity.this, Task2Activity.class);
+                startTask2Intent.putExtra(Task2Activity.TEXT_KEY, etWriteSomething.getText().toString());
                 startActivity(startTask2Intent);
 
         }
