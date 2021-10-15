@@ -14,6 +14,7 @@ public class StartActivity extends AppCompatActivity {
     private Button buttonTap;
 
     private View.OnClickListener mOnTapClickListener = new View.OnClickListener() {
+        //
         @Override
         public void onClick(View view) {
             if(isTextValid()) {
